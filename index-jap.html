@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Offine Note Taking</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+        <header>
+                <a href="login.html"><span>login</span></a>            
+                <h1>TA ToDo</h1>
+        </header>
+    
+            <main>
+                <div class="block1">
+                    
+                    <h2>To Doのリスト</h2>
+                    <ol>
+
+                    </ol>
+                </div>
+            
+                <div class="block2">
+                    <h2>新しいタスクを作成する</h2>
+    
+                    <form onsubmit="addNote()">
+                        <fieldset>
+                            <legend>NoteTaking</legend>
+                                <label for="tname">Taskname</label>
+                                <input class="textfields" type="text" id="tname" placeholder="Task Name">
+    
+                                <label for="tdes">TaskDescription</label>
+                                <textarea id="tdes" class="textfields" placeholder="Task Description"></textarea>                
+    
+                                <label for="tdue">Due Date</label>
+                                <input type="date" id="tdue" placeholder="Due Date">
+    
+                                <input type="submit" value="Add Task" class="btn">
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+            <script src="js/app.js"></script>
+    
+</body>
+</html>

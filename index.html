@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" manifest="offlineApp.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Offine Note Taking</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="start();">
+        <header>
+                <a href="login.html"><span>login</span></a>            
+                <h1>TA ToDo</h1>
+        </header>
+    
+            <main>
+                <div class="block1" id="dynamic">       
+                    <h2>List of To Dos</h2>
+
+                    <ol id=list></ol>
+                </div>
+            
+                <div class="block2">
+                    <h2>Create a new Task</h2>
+    
+                    <form onsubmit="addtask(event)">
+                        <fieldset>
+                            <legend>NoteTaking</legend>
+                                <label for="taskname">Taskname</label>
+                                <input class="textfields" type="text" id="taskname" placeholder="Task Name">
+    
+                                <label for="description">TaskDescription</label>
+                                <textarea id="description" class="textfields" placeholder="Task Description"></textarea>                
+    
+                                <label for="duedate">Due Date</label>
+                                <input type="date" id="duedate">
+    
+                                <input type="submit" value="Add Task" class="btn">
+                        </fieldset>
+                    </form>
+                </div>
+            </main>
+            <script src="js/app.js"></script>
+    
+</body>
+</html>

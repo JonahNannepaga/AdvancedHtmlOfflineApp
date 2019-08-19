@@ -1,0 +1,26 @@
+{
+  "name": "offline_notetaking_app",
+  "version": "1.0.0",
+  "description": "Offline Note Taking",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://tagitlab.techaspect.com/UI/Training/ui-june-2019/advanced-html-mini-project.git"
+  },
+  "author": "Jonah",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.3",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "css-loader": "^3.0.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^0.23.1"
+  }
+}

@@ -1,0 +1,14 @@
+CACHE MANIFEST
+
+#version 4.4
+
+CACHE:
+css/app.css
+js/app.js
+no-network.html
+
+NETWORK:
+*
+
+FALLBACK:
+/login.html /no-network.html
